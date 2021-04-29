@@ -1,0 +1,252 @@
+[gd_scene load_steps=36 format=2]
+
+[ext_resource path="res://sky.png" type="Texture" id=1]
+[ext_resource path="res://Menu.gd" type="Script" id=2]
+[ext_resource path="res://localbutton.png" type="Texture" id=3]
+[ext_resource path="res://multibutton.png" type="Texture" id=4]
+[ext_resource path="res://goggle animations.png" type="Texture" id=5]
+[ext_resource path="res://garth sprite sheet.png" type="Texture" id=6]
+[ext_resource path="res://archie sprite sheet.png" type="Texture" id=7]
+[ext_resource path="res://greener sprite sheet.png" type="Texture" id=8]
+[ext_resource path="res://test title.png" type="Texture" id=9]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 9, 22, 9 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 22, 9 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ) ],
+"loop": false,
+"name": "Button",
+"speed": 1.0
+} ]
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 9, 22, 9 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 22, 9 )
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ SubResource( 4 ), SubResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 5 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 5 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 5 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=11]
+animations = [ {
+"frames": [ SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 8 )
+region = Rect2( 192, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 8 )
+region = Rect2( 224, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 8 )
+region = Rect2( 160, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 8 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=16]
+animations = [ {
+"frames": [ SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ) ],
+"loop": true,
+"name": "default",
+"speed": 6.0
+} ]
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 6 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 6 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 6 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 6 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=21]
+animations = [ {
+"frames": [ SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ) ],
+"loop": true,
+"name": "default",
+"speed": 6.0
+} ]
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 7 )
+region = Rect2( 224, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 7 )
+region = Rect2( 192, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 7 )
+region = Rect2( 160, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 7 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=26]
+animations = [ {
+"frames": [ SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Background1" type="Node2D" parent="."]
+position = Vector2( -75, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="Background1"]
+anchor_right = 100.0
+anchor_bottom = 100.0
+margin_right = 588.0
+margin_bottom = 306.0
+texture = ExtResource( 1 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background2" type="Node2D" parent="."]
+position = Vector2( -650, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="Background2"]
+margin_right = 581.0
+margin_bottom = 308.0
+texture = ExtResource( 1 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MainMenu" type="Node2D" parent="."]
+
+[node name="Join" type="Node2D" parent="MainMenu"]
+position = Vector2( 208, 235 )
+scale = Vector2( 1.5, 1.5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="joinbutton" type="Button" parent="MainMenu/Join"]
+margin_top = 2.0
+margin_right = 64.0
+margin_bottom = 28.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="JoinIcon" type="AnimatedSprite" parent="MainMenu/Join"]
+position = Vector2( 32, 13.5 )
+scale = Vector2( 3, 3 )
+frames = SubResource( 3 )
+animation = "Button"
+frame = 1
+
+[node name="Host" type="Node2D" parent="MainMenu"]
+position = Vector2( 208, 175 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="hostbutton" type="Button" parent="MainMenu/Host"]
+margin_top = 2.0
+margin_right = 65.0
+margin_bottom = 28.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HostIcon" type="AnimatedSprite" parent="MainMenu/Host"]
+position = Vector2( 32, 13.5 )
+scale = Vector2( 3, 3 )
+frames = SubResource( 6 )
+frame = 1
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="MainMenu"]
+position = Vector2( 52.5469, 213.239 )
+scale = Vector2( 4, 4 )
+frames = SubResource( 11 )
+frame = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="MainMenu"]
+position = Vector2( 385.303, 205.733 )
+scale = Vector2( 4, 4 )
+frames = SubResource( 16 )
+frame = 1
+
+[node name="AnimatedSprite3" type="AnimatedSprite" parent="MainMenu"]
+position = Vector2( 141.516, 204.544 )
+scale = Vector2( 4, 4 )
+frames = SubResource( 21 )
+frame = 2
+
+[node name="AnimatedSprite4" type="AnimatedSprite" parent="MainMenu"]
+position = Vector2( 468.548, 206.922 )
+scale = Vector2( 4, 4 )
+frames = SubResource( 26 )
+frame = 1
+
+[node name="Sprite" type="Sprite" parent="MainMenu"]
+position = Vector2( 264, 80.229 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 9 )
+
+[node name="LevelSelect" type="Node2D" parent="."]
+[connection signal="pressed" from="MainMenu/Join/joinbutton" to="." method="_on_joinbutton_pressed"]
+[connection signal="pressed" from="MainMenu/Host/hostbutton" to="." method="_on_hostbutton_pressed"]
